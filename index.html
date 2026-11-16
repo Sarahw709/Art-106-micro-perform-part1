@@ -115,9 +115,11 @@
     }
 
     main {
-      display: grid;
-      align-content: center;
-      padding: clamp(2rem, 6vh, 4.5rem) 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: clamp(1.35rem, 3vh, 2rem);
+      padding: clamp(1.75rem, 5vh, 3.25rem) 0 clamp(1.25rem, 3vh, 2rem);
     }
 
     h1 {
@@ -125,7 +127,7 @@
       max-width: 8ch;
       font-family: var(--serif);
       font-weight: 400;
-      font-size: clamp(4.6rem, 12.4vw, 10.5rem);
+      font-size: clamp(3.6rem, 8vw, 7rem);
       line-height: 0.84;
       letter-spacing: -0.035em;
     }
@@ -139,6 +141,35 @@
       font-style: italic;
       font-weight: 400;
       letter-spacing: -0.03em;
+    }
+
+    h2 {
+      margin: 0.15rem 0 0;
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--quiet);
+    }
+
+    .still,
+    video {
+      display: block;
+      width: min(100%, 40rem);
+      height: auto;
+      margin: 0;
+      background: #171412;
+    }
+
+    .still {
+      background: transparent;
+    }
+
+    .still img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
 
     @media (max-width: 640px) {
@@ -177,6 +208,13 @@
           <span>Perform</span>
           <em>Part 1</em>
         </h1>
+        <h2>Artist statement</h2>
+        <figure class="still">
+          <img src="media/micro-perform.jpg" width="1800" height="2400" alt="Raspberry Pi Pico on a breadboard with two lit orange LEDs, wired to a Nature Valley Crunchy oats and honey granola bar.">
+        </figure>
+        <video controls playsinline preload="metadata" width="1174" height="1918" src="media/Adobe%20Express%20-%20microperformpart1.mp4" aria-label="Micro Perform Part 1"></video>
+        <video controls playsinline preload="metadata" width="3840" height="2160" src="media/closeup-compressed%20(1).mp4" aria-label="Closeup"></video>
+        <video controls playsinline preload="metadata" width="2160" height="3840" src="media/beatit-compressed%20(1).mp4" aria-label="Beat it"></video>
       </main>
       <footer class="bar">
         <p>Micro Perform Part 1</p>
