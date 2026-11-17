@@ -30,6 +30,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("fonts/instrument-sans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --paper: #f4f1ea;
   --ink: #171412;
@@ -148,6 +156,14 @@ main > p {
   margin: 0;
   padding-bottom: 2.25rem;
   line-height: 1.6;
+}
+
+h3 {
+  margin: 2.75rem 0 0.35rem;
+  font-family: var(--sans);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 .still,
