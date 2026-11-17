@@ -143,11 +143,10 @@ h1 em {
 
 h2 {
   margin: 2.5rem 0 0;
-  font-family: var(--sans);
-  font-size: 0.78rem;
+  font-family: var(--serif);
+  font-size: 1.35rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  letter-spacing: -0.02em;
   color: var(--quiet);
 }
 
@@ -160,10 +159,10 @@ main > p {
 
 h3 {
   margin: 2.75rem 0 0.35rem;
-  font-family: var(--sans);
-  font-size: 1.15rem;
+  font-family: var(--serif);
+  font-size: 1.35rem;
   font-weight: 700;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   color: var(--quiet);
 }
 
