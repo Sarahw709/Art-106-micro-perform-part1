@@ -159,6 +159,7 @@ main > p {
 }
 
 h3 {
+  max-width: 20rem;
   margin: 2.75rem 0 0.35rem;
   font-family: var(--sans);
   font-size: 0.78rem;
@@ -179,6 +180,7 @@ video {
 
 .still {
   background: transparent;
+  padding-bottom: 2.75rem;
 }
 
 .still img {
