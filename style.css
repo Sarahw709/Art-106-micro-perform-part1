@@ -159,7 +159,7 @@ main > p {
 }
 
 h3 {
-  max-width: 20rem;
+  max-width: 32rem;
   margin: 2.75rem 0 0.35rem;
   font-family: var(--sans);
   font-size: 0.78rem;
@@ -172,7 +172,7 @@ h3 {
 .still,
 video {
   display: block;
-  width: min(100%, 20rem);
+  width: min(100%, 32rem);
   height: auto;
   margin: 0;
   background: #171412;
@@ -187,6 +187,10 @@ video {
   display: block;
   width: 100%;
   height: auto;
+}
+
+video:last-of-type {
+  margin-top: 2.75rem;
 }
 
 @media (max-width: 640px) {
